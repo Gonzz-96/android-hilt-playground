@@ -1,6 +1,7 @@
 package com.gonz.mx.hilt.domain.usecases
 
 import com.gonz.mx.hilt.domain.entities.Quote
+import com.gonz.mx.hilt.domain.gateways.QuotesGateway
 import javax.inject.Inject
 
 /**
@@ -12,7 +13,9 @@ import javax.inject.Inject
  * In the case of this use case, there will be a new instance
  * of it every time a ViewModel request it.
  */
-class GetQuotesUseCase @Inject constructor() {
+class GetQuotesUseCase @Inject constructor(
+    private val quotesGateway: QuotesGateway
+) {
     operator fun invoke(): List<Quote> {
         TODO("Not yet implemented")
     }
