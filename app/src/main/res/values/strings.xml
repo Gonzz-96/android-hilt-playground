@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android-hilt-playground</string>
+    <string name="android_hilt_playground">Android Hilt Playground</string>
 </resources>
