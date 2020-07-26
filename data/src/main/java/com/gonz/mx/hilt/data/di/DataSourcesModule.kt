@@ -1,4 +1,4 @@
-package com.gonz.mx.hilt.playground.di
+package com.gonz.mx.hilt.data.di
 
 import com.gonz.mx.hilt.data.di.QuotesLocalDataSourceAnnotation
 import com.gonz.mx.hilt.data.di.QuotesRemoteDataSourceAnnotation
