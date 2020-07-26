@@ -1,7 +1,7 @@
 package com.gonz.mx.hilt.data.di
 
-import com.gonz.mx.hilt.data.di.QuotesLocalDataSourceAnnotation
-import com.gonz.mx.hilt.data.di.QuotesRemoteDataSourceAnnotation
+import com.gonz.mx.hilt.data.di.annotations.QuotesLocalDataSourceAnnotation
+import com.gonz.mx.hilt.data.di.annotations.QuotesRemoteDataSourceAnnotation
 import com.gonz.mx.hilt.data.sources.QuotesDataSource
 import com.gonz.mx.hilt.data.sources.QuotesLocalDataSource
 import com.gonz.mx.hilt.data.sources.QuotesRemoteDataSource

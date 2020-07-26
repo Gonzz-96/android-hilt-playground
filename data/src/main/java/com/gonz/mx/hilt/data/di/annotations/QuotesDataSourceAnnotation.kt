@@ -1,4 +1,4 @@
-package com.gonz.mx.hilt.data.di
+package com.gonz.mx.hilt.data.di.annotations
 
 import javax.inject.Qualifier
 

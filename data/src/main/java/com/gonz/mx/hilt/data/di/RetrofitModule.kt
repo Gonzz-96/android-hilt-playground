@@ -13,7 +13,7 @@ import javax.inject.Singleton
 object RetrofitModule {
     @Provides
     @Singleton
-    fun provideInt(): QuotesService =
+    fun provideQuotesService(): QuotesService =
         Retrofit.Builder()
             .build()
             .create(QuotesService::class.java)
