@@ -6,6 +6,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
+import javax.inject.Singleton
 
 /**
  * UPDATE 1: The note below is not true. The code didn't
@@ -26,5 +27,6 @@ import dagger.hilt.android.components.ApplicationComponent
 @InstallIn(ApplicationComponent::class)
 abstract class GatewaysModule {
     @Binds
+    @Singleton
     abstract fun bindQuotesRepository(quotesRepository: QuotesRepository): QuotesGateway
 }
