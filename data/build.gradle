@@ -27,6 +27,7 @@ android {
 
 dependencies {
     def hilt_version = '2.28-alpha'
+    def retrofit_version = '2.2.0'
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -36,6 +37,9 @@ dependencies {
     // hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
 
     implementation project(path: ':domain')
 
