@@ -19,4 +19,12 @@ class GetQuotesUseCase @Inject constructor(
     operator fun invoke(): List<Quote> {
         TODO("Not yet implemented")
     }
+
+    fun getStrings() = "$this --> ${quotesGateway.getString()}"
+}
+
+class AnotherUseCaseXD @Inject constructor(
+    private val quotesGateway: QuotesGateway
+) {
+    fun getStrings() = "$this --> ${quotesGateway.getString()}"
 }

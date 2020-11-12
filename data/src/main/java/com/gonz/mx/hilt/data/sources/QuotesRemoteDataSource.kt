@@ -7,7 +7,9 @@ import javax.inject.Singleton
 
 @Singleton
 class QuotesRemoteDataSource @Inject constructor(
-    private val myNumber: QuotesService
+    private val quotesService: QuotesService
 ) : QuotesDataSource {
     override fun getQuotes(): List<Quote> = emptyList()
+
+    override fun getString() = "$this --> $quotesService"
 }

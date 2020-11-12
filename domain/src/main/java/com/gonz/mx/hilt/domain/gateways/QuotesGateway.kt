@@ -4,4 +4,5 @@ import com.gonz.mx.hilt.domain.entities.Quote
 
 interface QuotesGateway {
     fun getQuotes(): List<Quote>
+    fun getString(): String
 }

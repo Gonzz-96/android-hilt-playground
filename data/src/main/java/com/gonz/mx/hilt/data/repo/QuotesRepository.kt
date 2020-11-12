@@ -16,4 +16,6 @@ class QuotesRepository @Inject constructor(
     override fun getQuotes(): List<Quote> {
         TODO("Not yet implemented")
     }
+
+    override fun getString() = "$this ---> (${quotesRemoteDataSource.getString()} *** ${quotesLocalDataSource.getString()})"
 }

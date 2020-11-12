@@ -15,6 +15,7 @@ object RetrofitModule {
     @Singleton
     fun provideQuotesService(): QuotesService =
         Retrofit.Builder()
+            .baseUrl("https://google.com")
             .build()
             .create(QuotesService::class.java)
 }
